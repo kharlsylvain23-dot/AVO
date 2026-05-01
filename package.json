@@ -1,0 +1,21 @@
+{
+  "name": "brand-site",
+  "version": "1.0.0",
+  "description": "A simple brand site showcasing products with the ability to add more in the future.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "brand",
+    "product",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
