@@ -1,6 +1,12 @@
 [
   {
-    "name": "Theme settings",
+    "name": "theme_info",
+    "theme_name": "AVO",
+    "theme_version": "1.0.0",
+    "theme_author": "AVO"
+  },
+  {
+    "name": "Colors",
     "settings": [
       {
         "type": "color",

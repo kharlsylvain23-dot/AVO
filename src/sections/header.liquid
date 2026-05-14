@@ -1,9 +1,16 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+
     <nav class="nav" aria-label="Main navigation">
-      <a href="{{ routes.root_url }}">Home</a>
-      <a href="{{ routes.cart_url }}">Cart</a>
+      {% if linklists[section.settings.menu].links.size > 0 %}
+        {% for link in linklists[section.settings.menu].links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      {% else %}
+        <a href="{{ routes.root_url }}">Home</a>
+        <a href="{{ routes.cart_url }}">Cart</a>
+      {% endif %}
     </nav>
   </div>
 </header>
@@ -11,6 +18,13 @@
 {% schema %}
 {
   "name": "Header",
-  "settings": []
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ]
 }
 {% endschema %}

@@ -3,12 +3,12 @@
     "hero": {
       "type": "hero"
     },
-    "featured_collection": {
+    "featured_products": {
       "type": "featured-products"
     }
   },
   "order": [
     "hero",
-    "featured_collection"
+    "featured_products"
   ]
 }
