@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-template"
+    },
+    "benefits": {
+      "type": "benefits"
+    },
+    "features": {
+      "type": "features"
+    },
+    "faq": {
+      "type": "faq"
+    }
+  },
+  "order": [
+    "main",
+    "benefits",
+    "features",
+    "faq"
+  ]
+}
