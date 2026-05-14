@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="{{ routes.root_url }}">Home</a>
+      {% if collections.all.products.first %}
+        <a href="{{ collections.all.products.first.url }}">Product</a>
+      {% endif %}
+      <a href="{{ routes.cart_url }}">Cart</a>
+    </nav>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": []
+}
+{% endschema %}
