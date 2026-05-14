@@ -18,16 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: Number(variantId), quantity: 1 })
-      })
-        .then(function () {
-          target.textContent = 'Added ✓';
-          setTimeout(function () {
-            target.textContent = 'Add to cart';
-          }, 1200);
-        })
-        .catch(function () {
-          alert('Could not add item to cart.');
-        });
+      }).then(function () {
+        target.textContent = 'Added ✓';
+        setTimeout(function () {
+          target.textContent = 'Add to cart';
+        }, 1200);
+      });
     }
 
     if (target && target.id === 'js-buy-now') {
@@ -38,13 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id: Number(buyVariantId), quantity: 1 })
-      })
-        .then(function () {
-          window.location.href = '/checkout';
-        })
-        .catch(function () {
-          alert('Could not start checkout.');
-        });
+      }).then(function () {
+        window.location.href = '/checkout';
+      });
     }
   });
 });

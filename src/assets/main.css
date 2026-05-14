@@ -34,7 +34,6 @@ img {
 
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: #ffffff;
 }
 
 .header-inner,
@@ -47,7 +46,6 @@ img {
 
 .logo {
   font-weight: 800;
-  letter-spacing: 0.04em;
 }
 
 .nav,
@@ -65,25 +63,6 @@ img {
   align-items: center;
 }
 
-.hero-left,
-.hero-right,
-.hero-info,
-.hero-media,
-.benefit-text,
-.benefit-media {
-  flex: 1;
-}
-
-.hero-media,
-.benefit-media {
-  min-height: 260px;
-  border-radius: 12px;
-  background: #f3f4f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn {
   display: inline-block;
   border: 1px solid var(--border);
@@ -99,12 +78,6 @@ img {
   border-color: var(--accent);
 }
 
-.price,
-#product-price {
-  font-weight: 800;
-  font-size: 1.25rem;
-}
-
 .features-grid,
 .collection-grid {
   display: grid;
@@ -112,33 +85,8 @@ img {
   gap: 20px;
 }
 
-.feature,
-.product-card,
-.faq-item {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 18px;
-  background: #ffffff;
-}
-
-.muted {
-  color: var(--muted);
-}
-
-.faq-q {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  text-align: left;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 0;
-}
-
 .faq-a {
   display: none;
-  margin-top: 12px;
-  color: var(--muted);
 }
 
 .site-footer {
@@ -150,12 +98,6 @@ img {
   .hero,
   .product-hero,
   .benefit-row {
-    flex-direction: column;
-  }
-
-  .header-inner,
-  .footer-inner {
-    align-items: flex-start;
     flex-direction: column;
   }
 }
